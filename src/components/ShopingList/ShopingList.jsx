@@ -5,12 +5,9 @@ import PlantItem from "../PlantItem/PlantItem.jsx";
 import imgDefault from "../../assets/monstera.jpg"
 import "./ShopingList.css"
 
-
 export default function ShopingList(){
-
   return(
     <div className="listItem">
-
       {plantList.map(({name,id,light,water,isSpecialOffer})=>(
         <ul key={id} className="lmj-plant-list">       
           <PlantItem 
@@ -23,7 +20,6 @@ export default function ShopingList(){
             ></PlantItem>
         </ul>
       ))}
-    
     </div>
   )
 }

@@ -8,10 +8,14 @@ export default function PlantItem(props){
   const name = props.name;
   const img = props.cover;
   
+  function clickTest(){
+    console.log(name);
+    // alert(`on a cliquer sur ${name}`)
+  }
 
   return(
     <div >
-      <p>{name}</p>
+      <p onClick={clickTest}>{name}</p>
       <img className='lmj-plant-item-cover' src={img} alt="" />
       <CareScale scaleType='light' scaleValue={light}></CareScale>
       <CareScale scaleType='water' scaleValue={water}></CareScale>
